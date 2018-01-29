@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点泡泡</title>
+    <style>
+        .bee {
+            width: 1200px;
+            height: 800px;
+            margin: 10px auto;
+            position: relative;
+        }
+        #canvas1,#canvas2 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+        #canvas2 {
+            z-index: 2;
+        }
+        #btn {
+            display: block;
+            margin:20px auto;
+        }
+        .rule {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 300px;
+            height: 800px;
+            background-color: yellow;
+            padding: 10px 10px;
+            font-size: 24px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #67b168;
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+<div id="bee" class="bee">
+    <canvas id="canvas1" width="1200px" height="800px" ></canvas>
+    <canvas id="canvas2" width="1200px" height="800px" ></canvas>
+</div>
+<div style="position: relative;width: 100%">
+    <button class="btn btn-warning btn-lg" id="btn">重新开始</button>
+</div>
+<div class="rule">
+    <p>1、鼠标操作，点击泡泡得分。</p>
+    <p>2、一个泡泡升到水面则生命值减一，点到水母则生命值减一；</p>
+    <p>3、生命值为零则游戏结束。</p>
+</div>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/commonFunctions.js"></script>
+<script type="text/javascript" src="js/big.js"></script>
+<script type="text/javascript" src="js/bubble.js"></script>
+<script type="text/javascript" src="js/ane.js"></script>
+<script type="text/javascript" src="js/dust.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/sm.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

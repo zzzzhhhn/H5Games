@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大鱼喂小鱼</title>
+    <style>
+        body {
+            padding-top: 10px;
+        }
+        #allcanvas,.all_bg{
+            width: 1200px;
+            height: 800px;
+            margin: 0px auto;
+        }
+        #allcanvas{
+            position: relative;
+        }
+        #canvas1,#canvas2{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+        #canvas2{
+            z-index: 0;
+        }
+        #btn {
+            display: block;
+            margin:20px auto;
+        }
+        .rule {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 300px;
+            height: 800px;
+            background-color: yellow;
+            padding: 10px 10px;
+            font-size: 24px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #67b168;
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="all_bg">
+        <div id="allcanvas">
+            <canvas id="canvas1" width="1200px" height="800px"></canvas>
+            <canvas id="canvas2" width="1200px" height="800px"></canvas>
+        </div>
+    </div>
+    <div style="position: relative;width: 100%;text-align: center">
+        <button class="btn btn-warning btn-lg" id="btn">重新开始</button>
+        <button class="btn btn-warning btn-lg" id="save">保存进程</button>
+        <button class="btn btn-warning btn-lg" id="show">读取进程</button>
+    </div>
+    <div class="rule">
+        <p>1、鼠标操作，大鱼会自动追逐鼠标；</p>
+        <p>2、引导大鱼收集食物然后喂给小鱼则得分；</p>
+        <p>3、得分等于喂给小鱼的食物 x 倍数，每收集一个蓝色果实倍数加1，最多叠加到5，喂食后倍数回归为1；</p>
+        <p>4、小鱼饥饿度降为零则游戏结束。</p>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/ane.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/background.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/main.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/commonFunctions.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/fruit.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/mom.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/momCollect.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/baby.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/data.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/wave.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/feedwave.js"></script>
+    <script type="text/javascript" language="JavaScript" src="js/dust.js"></script>
+</body>
+</html>

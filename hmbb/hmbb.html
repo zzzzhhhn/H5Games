@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>海绵宝宝抓水母</title>
+    <style>
+        .content {
+            width: 1200px;
+            height: 800px;
+            position: relative;
+            margin: 10px auto;
+        }
+        #canvas1,#canvas2 {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            z-index: 0;
+        }
+        #canvas2 {
+            z-index: 1;
+        }
+        #btn {
+            display: block;
+            margin:20px auto;
+        }
+        .rule {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 300px;
+            height: 800px;
+            background-color: yellow;
+            padding: 10px 10px;
+            font-size: 24px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #67b168;
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="content">
+        <canvas id="canvas1" width="1200px" height="800px"></canvas>
+        <canvas id="canvas2" width="1200px" height="800px"></canvas>
+    </div>
+    <div style="position: relative;width: 100%">
+        <button class="btn btn-warning btn-lg" id="btn">重新开始</button>
+    </div>
+    <div class="rule">
+        <p>1、方向键操作： ← 左移   ↑ 跳   → 右移；</p>
+        <p>2、控制海绵宝宝吹泡泡，泡泡击中水母头部得分；</p>
+        <p>3、通过跳跃躲避追赶派大星的水母；</p>
+        <p>4、被水母蜇一次生命值减一，生命值为零则游戏结束；</p>
+        <p>5、水母数量增长到50条则游戏结束。</p>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/commonFunctions.js"></script>
+    <script type="text/javascript" src="js/hmbb.js"></script>
+    <script type="text/javascript" src="js/bubble.js"></script>
+    <script type="text/javascript" src="js/ane.js"></script>
+    <script type="text/javascript" src="js/dust.js"></script>
+    <script type="text/javascript" src="js/pdx.js"></script>
+    <script type="text/javascript" src="js/sm.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
